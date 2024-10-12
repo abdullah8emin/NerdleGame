@@ -1,0 +1,130 @@
+body {
+    background-color: #e3f2fd;
+}
+
+div {
+    width: 60%;
+    margin: auto;
+}
+
+div#rows {
+    margin-left: 250px;
+    padding: 10px;
+    float: left;
+}
+
+div#numbers,
+#others {
+    padding: 5px;
+    width: 40%;
+    margin: auto;
+}
+
+div#eq {
+    width: 40%;
+}
+
+.buttonContainer {
+    position: relative;
+}
+
+.btns {
+    height: 40px;
+    width: 40px;
+    vertical-align: middle;
+}
+
+.btns:hover {
+    background-color: lightgray;
+}
+
+.btns.clicked {
+    background-color: lightblue;
+}
+
+.include {
+    background-color: purple;
+    color: white;
+}
+
+.notinclude {
+    background-color: black;
+    color: white;
+}
+
+.correct {
+    background-color: green;
+    color: white;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: 100px;
+    margin-bottom: 210px;
+}
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+    opacity: 0.8;
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+#guessList {
+    background-color: rgba(189, 237, 255, 0.961);
+    height: 250px;
+    width: 175px;
+    margin-right: 100px;
+}
